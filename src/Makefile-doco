@@ -1,0 +1,39 @@
+################################################################
+# Doco: Makefile for building Markdown website
+# https://github.com/cliffano/doco
+################################################################
+
+# Doco's version number
+DOCO_VERSION = 0.9.0-pre.0
+
+$(info ################################################################)
+$(info Building Doco website using Makefile:)
+
+################################################################
+# Base targets
+
+# CI target to be executed by CI/CD tool
+ci: deps lint
+
+# All target is just an alias to ci target
+all: deps lint
+
+deps:
+	apt-get install -y markdownlint
+
+lint:
+	mdl -s .mdl-style.rb $(shell find . -name "*.md")
+
+################################################################
+# Release targets
+
+release-major:
+	rtk release --release-increment-type major
+
+release-minor:
+	rtk release --release-increment-type minor
+
+release-patch:
+	rtk release --release-increment-type patch
+
+.PHONY: ci all deps lint
