@@ -16,11 +16,17 @@ $(info Building Markdown website using Doco:)
 all: ci
 ci: deps lint
 
+clean:
+	echo "PLACEHOLDER"
+
 deps:
 	apt-get install -y markdownlint
 
 lint:
 	mdl -s .mdl-style.rb $(shell find . -name "*.md")
+
+test:
+	echo "PLACEHOLDER"
 
 # Update Makefile to the latest version tag
 update-to-latest: TARGET_DOCO_VERSION = $(shell curl -s https://api.github.com/repos/cliffano/doco/tags | jq -r '.[0].name')
@@ -75,4 +81,4 @@ release-minor:
 release-patch:
 	rtk release --release-increment-type patch
 
-.PHONY: all ci deps lint update-to-latest update-to-main update-to-version update-dotfiles release release-major release-minor release-patch
+.PHONY: all ci clean deps lint test update-to-latest update-to-main update-to-version update-dotfiles release release-major release-minor release-patch

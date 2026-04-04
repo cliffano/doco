@@ -1,5 +1,9 @@
 all: ci
-ci: lint test
+ci: clean lint test
+
+clean:
+	cd examples && \
+	  make -f ../src/Makefile-doco clean
 
 lint:
 	checkmake src/Makefile-doco
@@ -20,4 +24,4 @@ release-patch:
 
 release: release-minor
 
-.PHONY: all ci lint release release-major release-minor release-patch test
+.PHONY: all ci clean lint release release-major release-minor release-patch test
