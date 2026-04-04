@@ -1,17 +1,13 @@
 all: ci
-ci: clean lint test
-
-clean:
-	cd examples && \
-	  make -f ../src/Makefile-doco clean
+ci: lint test
 
 lint:
 	checkmake src/Makefile-doco
 
 test:
 	cd examples && \
-	  make -f ../src/Makefile-doco deps-extra-apt ci test-examples deps-upgrade update-dotfiles update-to-latest update-to-main && \
-	  make -f ../src/Makefile-doco update-to-version TARGET_DOCO_VERSION=1.0.0
+	  make -f ../src/Makefile-doco ci test-examples deps-upgrade update-dotfiles update-to-latest update-to-main && \
+	  make -f ../src/Makefile-doco update-to-version TARGET_DOCO_VERSION=0.9.0
 
 release-major:
 	rtk release --release-increment-type major
@@ -24,4 +20,4 @@ release-patch:
 
 release: release-minor
 
-.PHONY: all ci clean lint release release-major release-minor release-patch test
+.PHONY: all ci lint release release-major release-minor release-patch test
