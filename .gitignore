@@ -3,11 +3,8 @@ core
 stage/
 # End of Studio gitignore
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,ansible,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,ansible,python
-
-### Ansible ###
-*.retry
+# Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,python
 
 ### macOS ###
 # General
@@ -233,4 +230,4 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,ansible,python
+# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python
