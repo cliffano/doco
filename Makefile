@@ -10,7 +10,7 @@ lint:
 
 test:
 	cd examples && \
-	  make -f ../src/Makefile-doco ci deps-upgrade update-dotfiles update-to-latest update-to-main && \
+	  make -f ../src/Makefile-doco ci update-dotfiles update-to-latest update-to-main && \
 	  make -f ../src/Makefile-doco update-to-version TARGET_DOCO_VERSION=0.9.0
 
 release-major:

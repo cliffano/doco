@@ -16,14 +16,20 @@ $(info Building Markdown website using Doco:)
 all: ci
 ci: deps lint
 
-clean:
-	echo "PLACEHOLDER"
+# Ensure stage directory exists
+stage:
+	mkdir -p stage/
 
+# Remove all temporary (staged, generated) files
+clean:
+	rm -rf stage/
+
+# Retrieve the dependencies
 deps:
 	apt-get install -y markdownlint
 
 lint:
-	mdl -s .mdl-style.rb $(shell find . -name "*.md")
+	mdl -s .mdl-style.rb $(shell find . -path ./stage -prune -o -name "*.md" -print)
 
 test:
 	echo "PLACEHOLDER"
