@@ -5,8 +5,8 @@
 
 # Doco
 
-Doco is a Makefile for building Markdown website .
-It provides utility targets for linting and releasing Markdown website projects.
+Doco is a Makefile for building DocoSite website .
+It provides utility targets for linting and releasing DocoSite website projects.
 
 Have a look at [DocoExample](examples/) as an example project which uses Doco.
 
@@ -23,7 +23,7 @@ Have a look at [DocoExample](examples/) as an example project which uses Doco.
 |-----|-------|
 | project_id | doco |
 | project_name | Doco |
-| project_desc | A sample Markdown website built by Doco |
+| project_desc | A sample DocoSite website built by Doco |
 | author_name | Cliffano Subagio |
 | author_email | cliffano@gmail.com |
 | github_id | cliffano |

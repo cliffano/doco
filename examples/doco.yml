@@ -1,10 +1,10 @@
 ---
 generator:
-  component: markdown
+  component: doco-site
   inputs:
     project_id: docoexample
     project_name: DocoExample
-    project_desc: A sample Markdown website built by Doco
+    project_desc: A sample DocoSite website built by Doco
     author_name: Cliffano Subagio
     author_email: cliffano@gmail.com
     github_id: cliffano

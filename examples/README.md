@@ -4,4 +4,4 @@
 
 # DocoExample
 
-DocoExample is an example project for Markdown website.
+DocoExample is an example project for DocoSite website.
