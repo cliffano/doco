@@ -19,15 +19,18 @@ Have a look at [DocoExample](examples/) as an example project which uses Doco.
 
 ## Configuration
 
-| Key | Value |
-|-----|-------|
-| project_id | doco |
-| project_name | Doco |
-| project_desc | A sample DocoSite website built by Doco |
-| author_name | Cliffano Subagio |
-| author_email | cliffano@gmail.com |
-| github_id | cliffano |
-| github_repo | doco |
+Create Doco configuration file called `doco.yml` with contains the following properties:
+
+| Property | Description | Example |
+|----------|-------------|---------|
+| generator.component | The generator component type from [generator-website](https://github.com/cliffano/generator-website) | `doco-site` |
+| generator.inputs.project_id | The project ID | `somedocosite` |
+| generator.inputs.project_name | The project display name | `Some DocoSite` |
+| generator.inputs.project_desc | The project description | `A sample DocoSite website` |
+| generator.inputs.author_name | The author's name | `Some Author` |
+| generator.inputs.author_email | The author's email address | `someauthor@example.com` |
+| generator.inputs.github_id | The GitHub user or organisation ID | `pakkunbot` |
+| generator.inputs.github_repo | The GitHub repository name | `docoexample` |
 
 Usage
 -----
@@ -36,9 +39,9 @@ The following targets are available:
 
 | Target | Description |
 |--------|-------------|
-| ci | CI target to be executed by CI/CD tool, end to end build of the Python package |
-| deps | Retrieve package dependencies using [Poetry](https://python-poetry.org/) |
-| lint | Run lint checks against source and test code using [yamllint](https://github.com/adrienverge/yamllint) |
+| ci | CI target to be executed by CI/CD tool, end to end build of the DocoSite |
+| deps-extra-apt | Retrieve dependencies requiring installation using apt |
+| lint | Run lint checks against Markdown files using [markdownlint](https://github.com/markdownlint/markdownlint) |
 | release-major | Create a major release using [rtk](https://github.com/cliffano/rtk) |
 | release-minor | Create a minor release using [rtk](https://github.com/cliffano/rtk) |
 | release-patch | Create a patch release using [rtk](https://github.com/cliffano/rtk) |
