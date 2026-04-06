@@ -1,10 +1,10 @@
 {
   "resources": [
     {
-      "path": "Makefile",
+      "path": "src/Makefile-doco",
       "type": "makefile",
       "params": {
-        "variable": "version"
+        "variable": "DOCO_VERSION"
       }
     },
     {
