@@ -13,7 +13,9 @@ Have a look at [DocoExample](examples/) as an example project which uses Doco.
 ## Installation
 
 1. Download `src/Makefile-doco` as the `Makefile` of your project:
-    `curl https://raw.githubusercontent.com/cliffano/doco/main/src/Makefile-doco -o Makefile`
+```text
+`curl https://raw.githubusercontent.com/cliffano/doco/main/src/Makefile-doco -o Makefile`
+```
 2. Create configuration file `doco.yml` with properties described in [Configuration](#configuration) section
 3. Run the available `Makefile` targets described in [Usage](#usage) section
 
