@@ -17,7 +17,7 @@ UPDATE_DOTFILES = .github/. .gitignore .mdl-style.rb
 # and they will be parsed using yq https://github.com/mikefarah/yq
 
 $(info ################################################################)
-$(info Building DocoSite website using Doco:)
+$(info Building DocoSite website using Doco...)
 
 ################################################################
 # Base targets
