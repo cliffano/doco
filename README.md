@@ -1,7 +1,11 @@
+<!-- BEGIN:AVATAR -->
 ![Avatar](avatar.jpg)
+<!-- END:AVATAR -->
 
+<!-- BEGIN:BADGES -->
 [![Build Status](https://github.com/cliffano/doco/workflows/CI/badge.svg)](https://github.com/cliffano/doco/actions?query=workflow%3ACI)
 [![Security Status](https://snyk.io/test/github/cliffano/doco/badge.svg)](https://snyk.io/test/github/cliffano/doco)
+<!-- END:BADGES -->
 
 # Doco
 
@@ -12,10 +16,7 @@ Have a look at [DocoExample](examples/) as an example project which uses Doco.
 
 ## Installation
 
-1. Download `src/Makefile-doco` as the `Makefile` of your project:
-```text
-`curl https://raw.githubusercontent.com/cliffano/doco/main/src/Makefile-doco -o Makefile`
-```
+1. Download `src/Makefile-doco` as the `Makefile` of your project: `curl https://raw.githubusercontent.com/cliffano/doco/main/src/Makefile-doco -o Makefile`
 2. Create configuration file `doco.yml` with properties described in [Configuration](#configuration) section
 3. Run the available `Makefile` targets described in [Usage](#usage) section
 
@@ -34,8 +35,7 @@ Create Doco configuration file called `doco.yml` with contains the following pro
 | generator.inputs.github_id | The GitHub user or organisation ID | `pakkunbot` |
 | generator.inputs.github_repo | The GitHub repository name | `docoexample` |
 
-Usage
------
+## Usage
 
 The following targets are available:
 
@@ -48,8 +48,7 @@ The following targets are available:
 | release-minor | Create a minor release using [rtk](https://github.com/cliffano/rtk) |
 | release-patch | Create a patch release using [rtk](https://github.com/cliffano/rtk) |
 
-Colophon
---------
+## Colophon
 
 Related Projects:
 

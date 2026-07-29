@@ -1,7 +1,17 @@
+<!-- BEGIN:AVATAR -->
 ![Avatar](avatar.jpg)
+<!-- END:AVATAR -->
 
-[![Build Status](https://github.com/cliffano/doco/workflows/CI/badge.svg)](https://github.com/cliffano/doco/actions?query=workflow%3ACI)
+<!-- BEGIN:BADGES -->
+TODO
+<!-- END:BADGES -->
 
 # DocoExample
 
 DocoExample is an example project for DocoSite website.
+
+## Colophon
+
+<!-- BEGIN:DEVELOPERS_GUIDE -->
+[Developer's Guide](https://gepeto.github.io/developers-guide-ansible.html)
+<!-- END:DEVELOPERS_GUIDE -->
