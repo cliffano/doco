@@ -8,7 +8,7 @@ DOCO_VERSION = 0.9.0-pre.0
 
 UPDATE_MAKEFILE = doco
 UPDATE_GENERATOR = website
-UPDATE_DOTFILES = .github/. .gitignore .mdl-style.rb
+UPDATE_DOTFILES = .github/. .gitignore
 
 ################################################################
 # User configuration variables
