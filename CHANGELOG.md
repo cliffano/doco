@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+- Parameterise UPDATE_GH_ID
+
 ## 0.13.0 - 2026-08-02
 ### Added
 - Add AGENTS.md to dotfiles list
